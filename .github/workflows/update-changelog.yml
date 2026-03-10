@@ -40,7 +40,7 @@ jobs:
           args: --verbose ${{ steps.prev-tag.outputs.prev_tag }}..${{ github.ref_name }} --prepend CHANGELOG.md
 
       - name: Create PR with changelog
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: changelog-${{ github.ref_name }}
