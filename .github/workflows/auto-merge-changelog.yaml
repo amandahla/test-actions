@@ -10,7 +10,6 @@ on:
       - ready_for_review
       - reopened
       - unlocked
-  status: {}
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
