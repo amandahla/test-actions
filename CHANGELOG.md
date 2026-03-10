@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 
 
+## 1.9.3 (Mar 10, 2026)
+
+FEATURES:
+
+* Add v1.9.3
+
+MAINTENANCE:
+
+* Set labels
+* Change autoapprove
+
+
 ## 1.7.7 (Mar 10, 2026)
 
 FEATURES:
