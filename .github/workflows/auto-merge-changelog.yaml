@@ -32,7 +32,7 @@ jobs:
               event: 'APPROVE'
             })
   auto-merge:
-    after: approve_pr
+    needs: approve_pr
     name: Auto-merge changelog PR
     runs-on: ubuntu-latest
     permissions:
