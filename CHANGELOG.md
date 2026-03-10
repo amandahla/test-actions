@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## 1.7.11 (Mar 10, 2026)
+
+FEATURES:
+
+* Add v1.7.11
+
+MAINTENANCE:
+
+* Fix workflows
+
+
 ## 1.7.7 (Mar 10, 2026)
 
 FEATURES:
