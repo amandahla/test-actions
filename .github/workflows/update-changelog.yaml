@@ -60,3 +60,4 @@ jobs:
           delete-branch: true
           add-paths: "CHANGELOG.md"
           sign-commits: true
+	  author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
