@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 
 
+## 1.7.6 (Mar 10, 2026)
+
+FEATURES:
+
+* Add v1.7.6
+
+MAINTENANCE:
+
+* Add changelog for v1.7.5
+
+
+
+
 ## 1.7.5 (Mar 10, 2026)
 
 FEATURES:
