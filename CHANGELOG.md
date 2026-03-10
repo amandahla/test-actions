@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## 1.9.2 (Mar 10, 2026)
+
+FEATURES:
+
+* V1.9.2
+
+MAINTENANCE:
+
+* Move to two different workflows
+
+
 ## 1.7.7 (Mar 10, 2026)
 
 FEATURES:
