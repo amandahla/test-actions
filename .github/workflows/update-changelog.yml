@@ -58,4 +58,5 @@ jobs:
           commit-message: "OCM-00000 | chore: add changelog for ${{ github.ref_name }}"
           labels: changelog,automated
           delete-branch: true
-          path: CHANGELOG.md
+          add-paths: |
+		CHANGELOG.md
