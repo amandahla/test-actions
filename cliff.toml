@@ -47,7 +47,7 @@ body = """
 {% endfor %}\n
 """
 # Remove leading and trailing whitespaces from the changelog
-trim = false
+trim = true
 # Render body even when there are no releases to process
 render_always = true
 # Postprocessors for final changelog modifications
