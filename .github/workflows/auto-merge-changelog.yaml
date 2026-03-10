@@ -11,17 +11,29 @@ on:
       - reopened
       - unlocked
 jobs:
-  auto-approve:
+  approve_pr:
+    name: Approve changelog PR
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-    if: github.event.label.name == 'changelog'
     steps:
-      - uses: "hmarr/auto-approve-action@v4"
+      - name: Show author
+        run: |
+          echo ${{ github.event.pull_request.user.login }}
+      - name: Approve bot PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: github.event.pull_request.user.login == 'github-actions[bot]'
+        uses: actions/github-script@v8.0.0
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-          allow-users: "github-actions[bot]"
+          script: |
+            github.rest.pulls.createReview({
+              owner: context.payload.repository.full_name.split('/')[0],
+              repo: context.payload.repository.full_name.split('/')[1],
+              pull_number: context.payload.number,
+              event: 'APPROVE'
+            })
   auto-merge:
+    after: approve_pr
+    name: Auto-merge changelog PR
     runs-on: ubuntu-latest
     permissions:
       contents: write
