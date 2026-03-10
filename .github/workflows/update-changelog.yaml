@@ -46,7 +46,6 @@ jobs:
           branch: changelog-${{ github.ref_name }}
           base: main
           title: "OCM-00000 | chore: add changelog for ${{ github.ref_name }}"
-          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           body: |
             ## Changelog for ${{ github.ref_name }}
 
