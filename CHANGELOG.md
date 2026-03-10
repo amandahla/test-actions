@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 
 
+## 1.7.9 (Mar 10, 2026)
+
+FEATURES:
+
+* Add v1.7.9
+
+MAINTENANCE:
+
+* Merge workflows
+* Add autoapprove
+* Add automerge
+
+
 ## 1.7.7 (Mar 10, 2026)
 
 FEATURES:
