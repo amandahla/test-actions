@@ -1,4 +1,4 @@
-name: automerge
+name: Auto-merge changelog PRs
 on:
   pull_request:
     types:
@@ -12,7 +12,17 @@ on:
       - unlocked
   status: {}
 jobs:
-  automerge:
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    if: github.event.label.name == 'changelog'
+    steps:
+      - uses: "hmarr/auto-approve-action@v4"
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          allow-users: "github-actions[bot]"
+  auto-merge:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,5 +35,4 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "automated,changelog"
           MERGE_METHOD: "merge"
-          MERGE_REQUIRED_APPROVALS: "0"
           MERGE_DELETE_BRANCH: "true"
