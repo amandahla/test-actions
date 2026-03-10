@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 
 
+## 1.7.8 (Mar 10, 2026)
+
+FEATURES:
+
+* Add v1.7.8
+
+MAINTENANCE:
+
+* Update create-pull-request action to version 8.1.0
+* Add changelog for v1.7.7
+
+
 ## 1.7.7 (Mar 10, 2026)
 
 FEATURES:
