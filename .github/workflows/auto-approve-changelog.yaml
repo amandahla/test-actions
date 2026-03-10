@@ -19,3 +19,5 @@ jobs:
           echo ${{ github.event.pull_request.user.login }}
       - name: Approve bot PR
         uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
