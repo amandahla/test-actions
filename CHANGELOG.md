@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## 1.9.1 (Mar 10, 2026)
+
+FEATURES:
+
+* V1.9.1
+
+MAINTENANCE:
+
+* Update changelog workflow to include author field
+
+
 ## 1.7.7 (Mar 10, 2026)
 
 FEATURES:
