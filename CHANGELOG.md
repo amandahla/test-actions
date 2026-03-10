@@ -1,3 +1,20 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+
+
+## 1.7.5 (Mar 10, 2026)
+
+FEATURES:
+
+* Add v1.7.5
+
+MAINTENANCE:
+
+* Add manual changelog
+
+
 ## 1.7.4 (11 Feb, 2026)
 ENHANCEMENTS:
 * Bug fixes:
